@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+  <head>
+    <meta charset="utf-8">
+    <title>Lunch Check</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="LunchCheckController" >
+      <input type="text"
+      ng-model="LunchItem" text=" ">
+      <button type="button"
+      ng-click="CheckButton()">Check Lunch</button>
+      <div>
+        {{result}}
+      </div>
+    </div>
+  </body>
+</html>
